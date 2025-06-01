@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Carousel</title>
+  </head>
+  <body class="dm-sans">
+    <main>
+      <div class="bg">
+        <!-- ----- NAV ----- -->
+        <div class="nav flex-row font-18">
+          <ul class="flex-row gap6">
+            <li class="nav-item" id="active-nav">Home</li>
+            <li class="nav-item">Features</li>
+            <li class="nav-item">Pricing</li>
+            <li class="nav-item">Blog</li>
+            <li class="nav-item nav-icon">
+              <img src="./imgs/fa-dribbble.svg" alt="dribbble" />
+            </li>
+            <li class="nav-item nav-icon">
+              <img src="./imgs/fa-behance.svg" alt="behance" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- ----- Carousel ----- -->
+        <div class="carousel flex-row">
+          <i class="fa-solid fa-angle-left white icon" id="prev"></i>
+
+          <div class="carousel-container">
+            <div class="slide active">
+              <p class="firstp">Startup 3</p>
+              <h1>Forget About Code</h1>
+              <p class="secp w-half">
+                Startup Framework gives you complete freedom over your creative
+                process — You don’t have to think about any technical aspects.
+                There are no limits and absolutely no coding.
+              </p>
+              <button class="btn-1">Create an Account</button>
+            </div>
+
+            <!-- Slide 2–5 (duplicate content for now, just changing title) -->
+            <div class="slide">
+              <p class="firstp">Startup 3</p>
+              <h1>Design Freely</h1>
+              <p class="secp w-half">You don’t have to think about any technical aspects.
+                There are no limits and absolutely no coding. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="btn-1">Create an Account</button>
+            </div>
+
+            <div class="slide">
+              <p class="firstp">Startup 3</p>
+              <h1>Freedom to Create</h1>
+              <p class="secp w-half">
+               Startup Framework gives you complete freedom over your creative
+                process. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non molestias delectus tenetur 
+              </p>
+              <button class="btn-1">Create an Account</button>
+            </div>
+
+            <div class="slide">
+              <p class="firstp">Startup 3</p>
+              <h1>Visual Builder</h1>
+              <p class="secp w-half">You don’t have to think about any technical aspects.
+                There are no limits and absolutely no coding. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="btn-1">Create an Account</button>
+            </div>
+
+            <div class="slide">
+              <p class="firstp">Startup 3</p>
+              <h1>Launch Fast</h1>
+              <p class="secp w-half">Startup Framework gives you complete freedom over your creative
+                process. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non molestias delectus tenetur </p>
+              <button class="btn-1">Create an Account</button>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-angle-right white icon" id="next"></i>
+        </div>
+
+        <!-- Carousel indicators -->
+        <div class="indicators">
+          <img src="./imgs/fa-circle.svg" class="dot active-dot" alt="dot" />
+          <img src="./imgs/fa-circle-o.svg" class="dot" alt="dot" />
+          <img src="./imgs/fa-circle-o.svg" class="dot" alt="dot" />
+          <img src="./imgs/fa-circle-o.svg" class="dot" alt="dot" />
+          <img src="./imgs/fa-circle-o.svg" class="dot" alt="dot" />
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
