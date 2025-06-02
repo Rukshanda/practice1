@@ -51,3 +51,19 @@ dots.forEach((dot, index) => {
 
 // Initialize
 showSlide(currentSlide);
+
+
+
+
+
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const closeIcon = document.getElementById('closeIcon');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.remove('hidden');
+});
+
+closeIcon.addEventListener('click', () => {
+  mobileNav.classList.add('hidden');
+});
